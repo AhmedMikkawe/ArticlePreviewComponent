@@ -68,4 +68,28 @@ body{
     height: 40px;
     border: none;
     cursor: pointer;
+    position: relative;
+}
+.component .author-component .share-tool-tip{
+    background-color: var(--Very-Dark-Grayish-Blue);
+    color: var(--Desaturated-Dark-Blue);
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 5px;
+    position: absolute;
+    top: -50px;
+    padding: 10px;
+    width: 150px;
+    margin-left: -75px;
+}
+.component .author-component .share .share-tool-tip::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--Very-Dark-Grayish-Blue) transparent transparent transparent;
 }
